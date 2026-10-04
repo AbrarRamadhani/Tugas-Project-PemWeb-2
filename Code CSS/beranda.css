@@ -176,3 +176,40 @@ main {
 .footer p {
   margin: 6px 0 0;
 }
+@media (max-width: 1024px) {
+  .beranda-grid {
+    grid-template-columns: 1fr;
+  }
+  .kolom-kanan {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  :root {
+    --pad: 20px;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+  nav {
+    gap: 18px;
+  }
+  main {
+    padding-top: 25px;
+  }
+  .kolom-kanan {
+    display: flex;
+  }
+  .item {
+    padding: 12px;
+  }
+  .footer {
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
