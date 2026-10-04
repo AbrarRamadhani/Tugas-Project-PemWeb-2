@@ -126,3 +126,31 @@ main {
   font-size: 22px;
   cursor: pointer;
 }
+.kolom-kanan {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.btn-tambah {
+  background: var(--hitam);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.kartu-angka {
+  background: var(--panel);
+  padding: 25px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kartu-angka strong {
+  font-size: var(--angka);
+}
