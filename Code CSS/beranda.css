@@ -1,0 +1,13 @@
+:root {
+  --bg: #ffffff;
+  --panel: #f3f3f3;
+  --garis: #333333;
+  --teks: #111111;
+  --redup: #6b6b6b;
+  --aksen: #1f8ad6;
+  --hitam: #111111;
+  --error: #c0392b;
+  --pad: 40px;
+  --h1: 20px;
+  --angka: 44px;
+}
