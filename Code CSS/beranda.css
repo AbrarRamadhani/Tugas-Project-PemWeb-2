@@ -82,3 +82,13 @@ main {
   align-items: center;
   gap: 14px;
 }
+.panel {
+  background: var(--panel);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.panel-judul {
+  margin-top: 0;
+  font-size: 18px;
+}
