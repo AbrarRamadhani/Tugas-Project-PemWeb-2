@@ -45,3 +45,25 @@ nav a.active {
   color: var(--aksen);
   font-weight: bold;
 }
+main {
+  padding: 40px var(--pad);
+}
+.judul-halaman {
+  font-size: var(--h1);
+  margin: 0 0 30px;
+}
+.beranda-grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 30px;
+}
+/* COMMIT 11: Tambah tampilan kotak panel */
+.panel {
+  background: var(--panel);
+  padding: 25px;
+  border-radius: 10px;
+}
+.panel-judul {
+  margin-top: 0;
+  font-size: 18px;
+}
