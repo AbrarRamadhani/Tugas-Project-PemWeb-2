@@ -131,7 +131,6 @@ main {
   flex-direction: column;
   gap: 18px;
 }
-
 .btn-tambah {
   background: var(--hitam);
   color: white;
@@ -140,7 +139,6 @@ main {
   padding: 15px;
   border-radius: 8px;
 }
-
 .kartu-angka {
   background: var(--panel);
   padding: 25px;
@@ -160,4 +158,21 @@ main {
 .item.selesai .nama {
   text-decoration: line-through;
   color: var(--redup);
+}
+.footer {
+  margin-top: 70px;
+  padding: 30px var(--pad);
+  border-top: 1px solid var(--garis);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--redup);
+  font-size: 14px;
+}
+.footer strong {
+  color: var(--teks);
+  font-size: 16px;
+}
+.footer p {
+  margin: 6px 0 0;
 }
