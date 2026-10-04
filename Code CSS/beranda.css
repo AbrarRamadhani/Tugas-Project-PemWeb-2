@@ -150,7 +150,14 @@ main {
   justify-content: space-between;
   align-items: center;
 }
-
 .kartu-angka strong {
   font-size: var(--angka);
+}
+.kosong {
+  color: var(--redup);
+}
+
+.item.selesai .nama {
+  text-decoration: line-through;
+  color: var(--redup);
 }
