@@ -17,5 +17,55 @@
             <a href="statistik.html" class="active">Statistik</a>
         </nav>
     </header>
+    <main>
+        <h1 class="judul-halaman">Statistik Tugasmu</h1>
+
+        <div class="stat-grid">
+
+        <article class="kartu-stat">
+            <span>Total Tugas</span>
+            <strong id="statTotal">0</strong>
+        </article>
+
+        <article class="kartu-stat">
+            <span>Sudah Selesai</span>
+            <strong id="statSelesai">0</strong>
+        </article>
+
+        <article class="kartu-stat">
+            <span>Belum Selesai</span>
+            <strong id="statBelum">0</strong>
+        </article>
+
+        <article class="kartu-stat">
+            <span>Progress</span>
+            <strong id="statProgress">0%</strong>
+        </article>
+
+        </div>
+
+        <!-- COMMIT 65: Riwayat -->
+        <section class="panel riwayat">
+
+        <div class="cari">
+            <input
+            type="text"
+            id="inputCari"
+            placeholder="Cari Riwayat Tugas..."
+            >
+
+            <button id="btnCari" class="btn-cari">
+            Cari
+            </button>
+        </div>
+
+        <ul id="listRiwayat" class="list"></ul>
+
+        <p id="kosongRiwayat" class="kosong">Belum ada riwayat tugas.</p>
+
+        </section>
+
+    </main>
+
 </body>
 </html>
