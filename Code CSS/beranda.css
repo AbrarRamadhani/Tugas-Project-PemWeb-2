@@ -11,3 +11,13 @@
   --h1: 20px;
   --angka: 44px;
 }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--teks);
+  font-family: Arial, sans-serif;
+}
