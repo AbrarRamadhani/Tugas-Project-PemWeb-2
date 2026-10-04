@@ -17,5 +17,62 @@
             <a href="statistik.html">Statistik</a>
         </nav>
     </header>
+    <main>
+        <div class="form-wrap">
+
+            <h1 class="judul-form">
+                Tambahkan Tugas Baru
+            </h1>
+
+            <p class="sub">
+                Silahkan isi detail tugasmu agar deadline tidak terlewat.
+            </p>
+
+            <form id="formTugas" class="form-panel" novalidate>
+
+                <label for="judul">Judul Tugas</label>
+                <input
+                type="text"
+                id="judul"
+                placeholder="Contoh : Tugas Coding"
+                >
+
+                <div class="baris">
+
+                <div>
+                    <label for="matkul">Mata Kuliah</label>
+                    <input
+                    type="text"
+                    id="matkul"
+                    placeholder="Contoh : Desain dan Analisis Algoritma"
+                    >
+                </div>
+
+                <div>
+                    <label for="tenggat">Tenggat Waktu</label>
+                    <input type="date" id="tenggat">
+                </div>
+
+                </div>
+
+                <label for="catatan">Catatan</label>
+                <textarea id="catatan" rows="6"></textarea>
+
+                <p id="pesanError" class="error" role="alert"></p>
+
+                <!-- COMMIT 35: Tombol -->
+                <div class="aksi">
+                <a href="beranda.html" class="btn btn-batal">
+                    Batal
+                </a>
+
+                <button type="submit" class="btn btn-simpan">
+                    Simpan Tugas
+                </button>
+                </div>
+
+            </form>
+        </div>
+  </main>
 </body>
 </html>
