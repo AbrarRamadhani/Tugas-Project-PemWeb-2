@@ -82,3 +82,28 @@ textarea {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
+.error {
+  color: var(--error);
+  min-height: 20px;
+}
+.aksi {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+.btn {
+  border: none;
+  padding: 13px 20px;
+  border-radius: 7px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+.btn-batal {
+  background: white;
+  color: var(--teks);
+}
+.btn-simpan {
+  background: var(--hitam);
+  color: white;
+}
