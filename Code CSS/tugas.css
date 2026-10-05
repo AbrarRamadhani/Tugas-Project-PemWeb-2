@@ -43,3 +43,42 @@ nav a.active {
   color: var(--aksen);
   font-weight: bold;
 }
+main {
+  padding: 40px var(--pad);
+}
+.form-wrap {
+  max-width: 850px;
+  margin: auto;
+}
+.judul-form {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.sub {
+  color: var(--redup);
+  margin-bottom: 30px;
+}
+.form-panel {
+  background: var(--panel);
+  padding: 30px;
+  border-radius: 10px;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 13px;
+  border-radius: 7px;
+  font-family: inherit;
+  margin-bottom: 20px;
+}
+.baris {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
