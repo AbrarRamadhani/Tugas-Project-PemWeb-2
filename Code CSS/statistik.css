@@ -9,3 +9,12 @@
   --pad: 40px;
   --angka: 40px;
 }
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--teks);
+  font-family: Arial, sans-serif;
+}
