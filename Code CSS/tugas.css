@@ -22,13 +22,24 @@ body {
   min-height: 70px;
   padding: 0 var(--pad);
   border-bottom: 1px solid var(--garis);
-
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .brand {
   font-size: 22px;
+  font-weight: bold;
+}
+nav {
+  display: flex;
+  gap: 28px;
+}
+nav a {
+  color: var(--teks);
+  text-decoration: none;
+  padding: 10px 0;
+}
+nav a.active {
+  color: var(--aksen);
   font-weight: bold;
 }
