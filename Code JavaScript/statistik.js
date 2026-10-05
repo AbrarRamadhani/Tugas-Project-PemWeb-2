@@ -102,3 +102,5 @@ function cariTugas() {
 
   tampilkanRiwayat(hasil);
 }
+btnCari.onclick = cariTugas;
+inputCari.oninput = cariTugas;
