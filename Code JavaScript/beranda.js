@@ -116,3 +116,17 @@ function hapusTugas(id) {
   simpanTugas();
   tampilkanTugas();
 }
+function hitungStatistik() {
+  let selesai = 0;
+
+  tugas.forEach(function(item) {
+    if (item.selesai) {
+      selesai++;
+    }
+  });
+
+  berandaSelesai.textContent = selesai;
+  berandaBelum.textContent = tugas.length - selesai;
+}
+
+tampilkanTugas();
