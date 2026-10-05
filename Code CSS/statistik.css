@@ -44,3 +44,32 @@ nav a.active {
   color: var(--aksen);
   font-weight: bold;
 }
+main {
+  padding: 40px var(--pad);
+}
+.judul-halaman {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+/* COMMIT 70: Tambah tampilan grid dan kartu statistik */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 30px;
+}
+.kartu-stat {
+  background: var(--panel);
+  padding: 25px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.kartu-stat span {
+  color: var(--redup);
+}
+.kartu-stat strong {
+  font-size: var(--angka);
+}
