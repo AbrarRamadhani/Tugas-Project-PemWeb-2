@@ -51,7 +51,6 @@ main {
   font-size: 20px;
   margin-bottom: 30px;
 }
-/* COMMIT 70: Tambah tampilan grid dan kartu statistik */
 .stat-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

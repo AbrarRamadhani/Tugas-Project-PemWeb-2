@@ -57,7 +57,6 @@ main {
   grid-template-columns: 1fr 360px;
   gap: 30px;
 }
-/* COMMIT 11: Tambah tampilan kotak panel */
 .panel {
   background: var(--panel);
   padding: 25px;
@@ -107,7 +106,6 @@ main {
   align-items: center;
   gap: 14px;
 }
-/* COMMIT 13: Tambah tampilan isi tugas dan tombol hapus */
 .info {
   flex: 1;
 }
