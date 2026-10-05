@@ -29,3 +29,21 @@ function formatTanggal(tanggal) {
 
   return bagian[2] + "/" + bagian[1] + "/" + bagian[0];
 }
+function simpanTugas() {
+  let hasil = "";
+
+  tugas.forEach(function(item, index) {
+    hasil += item.id + "###";
+    hasil += item.judul + "###";
+    hasil += item.matkul + "###";
+    hasil += item.tenggat + "###";
+    hasil += item.catatan + "###";
+    hasil += item.selesai;
+
+    if (index < tugas.length - 1) {
+      hasil += "|||";
+    }
+  });
+
+  localStorage.deadlinetugas = hasil;
+}
