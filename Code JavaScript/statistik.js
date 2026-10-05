@@ -89,3 +89,16 @@ function tampilkanRiwayat(daftarTugas) {
 
   listRiwayat.innerHTML = hasil;
 }
+function cariTugas() {
+  let kata = inputCari.value.toLowerCase();
+
+  let hasil = tugas.filter(function(item) {
+    let namaTugas = item.judul.toLowerCase();
+    let mataKuliah = (item.matkul || "").toLowerCase();
+
+    return namaTugas.includes(kata) ||
+           mataKuliah.includes(kata);
+  });
+
+  tampilkanRiwayat(hasil);
+}
