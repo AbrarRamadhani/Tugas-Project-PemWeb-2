@@ -32,6 +32,5 @@ formTugas.onsubmit = function(e) {
     localStorage.deadlinetugas =
       dataLama + "|||" + dataBaru;
   }
-  location.href = "beranda.html";
 }
 judul.focus();
