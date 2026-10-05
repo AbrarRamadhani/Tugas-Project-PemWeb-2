@@ -113,3 +113,28 @@ main {
   justify-content: space-between;
   gap: 15px;
 }
+.info {
+  flex: 1;
+}
+.nama {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.meta {
+  color: var(--redup);
+  font-size: 14px;
+}
+.badge {
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: #dff5e4;
+  color: #25733b;
+  font-size: 13px;
+}
+.badge.belum {
+  background: #f4e0e0;
+  color: #a33a3a;
+}
+.kosong {
+  color: var(--redup);
+}
