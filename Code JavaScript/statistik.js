@@ -28,3 +28,26 @@ function formatTanggal(tanggal) {
 
   return bagian[2] + "/" + bagian[1] + "/" + bagian[0];
 }
+function hitungStatistik() {
+  let selesai = 0;
+
+  tugas.forEach(function(item) {
+    if (item.selesai) {
+      selesai++;
+    }
+  });
+
+  let total = tugas.length;
+  let belum = total - selesai;
+
+  let progress = 0;
+
+  if (total > 0) {
+    progress = Math.round((selesai / total) * 100);
+  }
+
+  statTotal.textContent = total;
+  statSelesai.textContent = selesai;
+  statBelum.textContent = belum;
+  statProgress.textContent = progress + "%";
+}
