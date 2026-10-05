@@ -73,3 +73,27 @@ main {
 .kartu-stat strong {
   font-size: var(--angka);
 }
+.panel {
+  background: var(--panel);
+  padding: 25px;
+  border-radius: 10px;
+}
+.cari {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.cari input {
+  flex: 1;
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+.btn-cari {
+  padding: 13px 22px;
+  border: none;
+  border-radius: 7px;
+  background: var(--hitam);
+  color: white;
+  cursor: pointer;
+}
