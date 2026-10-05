@@ -97,3 +97,22 @@ function ubahStatus(id) {
   simpanTugas();
   tampilkanTugas();
 }
+function ubahStatus(id) {
+  tugas.forEach(function(item) {
+    if (item.id === id) {
+      item.selesai = !item.selesai;
+    }
+  });
+
+  simpanTugas();
+  tampilkanTugas();
+}
+
+function hapusTugas(id) {
+  tugas = tugas.filter(function(item) {
+    return item.id !== id;
+  });
+
+  simpanTugas();
+  tampilkanTugas();
+}
