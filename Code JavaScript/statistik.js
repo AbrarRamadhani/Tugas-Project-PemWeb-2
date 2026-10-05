@@ -19,3 +19,12 @@ if (data !== "") {
     }
   });
 }
+function formatTanggal(tanggal) {
+  if (tanggal === "") {
+    return "-";
+  }
+
+  let bagian = tanggal.split("-");
+
+  return bagian[2] + "/" + bagian[1] + "/" + bagian[0];
+}
