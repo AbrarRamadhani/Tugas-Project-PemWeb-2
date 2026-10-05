@@ -104,3 +104,5 @@ function cariTugas() {
 }
 btnCari.onclick = cariTugas;
 inputCari.oninput = cariTugas;
+hitungStatistik();
+tampilkanRiwayat(tugas);
