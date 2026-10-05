@@ -51,3 +51,41 @@ function hitungStatistik() {
   statBelum.textContent = belum;
   statProgress.textContent = progress + "%";
 }
+function tampilkanRiwayat(daftarTugas) {
+  let hasil = "";
+
+  if (daftarTugas.length === 0) {
+    listRiwayat.innerHTML = "";
+    kosongRiwayat.style.display = "block";
+    return;
+  }
+
+  kosongRiwayat.style.display = "none";
+
+  daftarTugas.forEach(function(item) {
+    let status = "Selesai";
+    let kelas = "badge";
+
+    if (!item.selesai) {
+      status = "Belum";
+      kelas = "badge belum";
+    }
+
+    hasil +=
+      '<li class="item">' +
+      '<div class="info">' +
+      '<div class="nama">' + item.judul + "</div>" +
+      '<div class="meta">' +
+      (item.matkul || "Tanpa mata kuliah") +
+      " - " +
+      formatTanggal(item.tenggat) +
+      "</div>" +
+      "</div>" +
+      '<span class="' + kelas + '">' +
+      status +
+      "</span>" +
+      "</li>";
+  });
+
+  listRiwayat.innerHTML = hasil;
+}
