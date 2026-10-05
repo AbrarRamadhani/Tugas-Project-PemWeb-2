@@ -34,4 +34,4 @@ formTugas.onsubmit = function(e) {
   }
   location.href = "beranda.html";
 }
-
+judul.focus();
