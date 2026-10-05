@@ -18,4 +18,12 @@ formTugas.onsubmit = function(e) {
     tenggat.focus();
     return;
   }
+  let dataLama = localStorage.deadlinetugas || "";
+
+  let dataBaru =
+    Date.now() + "###" +
+    judulTugas + "###" +
+    mataKuliah + "###" +
+    tanggal + "###" +
+    isiCatatan + "###false";
 }
