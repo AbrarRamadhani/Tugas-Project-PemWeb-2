@@ -7,3 +7,15 @@ formTugas.onsubmit = function(e) {
   let isiCatatan = catatan.value.trim();
 
   pesanError.textContent = "";
+
+  if (judulTugas === "") {
+    pesanError.textContent = "Judul tugas wajib diisi.";
+    judul.focus();
+    return;
+  }
+  if (tanggal === "") {
+    pesanError.textContent = "Tenggat waktu wajib diisi.";
+    tenggat.focus();
+    return;
+  }
+}
