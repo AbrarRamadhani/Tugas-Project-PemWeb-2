@@ -87,3 +87,13 @@ function tampilkanTugas() {
 
   hitungStatistik();
 }
+function ubahStatus(id) {
+  tugas.forEach(function(item) {
+    if (item.id === id) {
+      item.selesai = !item.selesai;
+    }
+  });
+
+  simpanTugas();
+  tampilkanTugas();
+}
