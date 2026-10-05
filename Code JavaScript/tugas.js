@@ -26,4 +26,12 @@ formTugas.onsubmit = function(e) {
     mataKuliah + "###" +
     tanggal + "###" +
     isiCatatan + "###false";
+  if (dataLama === "") {
+    localStorage.deadlinetugas = dataBaru;
+  } else {
+    localStorage.deadlinetugas =
+      dataLama + "|||" + dataBaru;
+  }
+  location.href = "beranda.html";
 }
+
